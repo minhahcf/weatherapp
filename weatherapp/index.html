@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="../main.js" type="module"></script>
+</head>
+<body>
+    <div class="info">
+        <div class="searchbox">
+            <input type="text" placeholder="Enter city" spellcheck="false">
+            <button><img src="images/search.png"></button>
+        </div>
+        <div class="errortext">
+            <p>Invalid city name. Please provide the correct city.</p>
+        </div>
+        <div class="weatherinfo">
+            <img src="images/rain.png" class="weather-png" alt="weather-png">
+            <h1 class="temperature">32°C</h1>
+            <h2 class="city">Chihuahua</h2>
+            <h3 class="weatherword"></h3>
+            <div class="description">
+                <div class="column">
+                    <img src="images/humidity.png" alt="humidity-png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <img src="images/wind.png" alt="wind-png">
+                    <div>
+                        <p class="wind">12 km/h</p>
+                        <p>Wind speed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="description2">
+                <!--adding feature-->
+                <div class="column">
+                    <img src="images/temperature.png" alt="temperature-png">
+                    <div>
+                        <p class="mintemperature">10°C</p>
+                        <p>Minimum temp</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <img src="images/temperature.png" alt="temperature-png">
+                    <div>
+                        <p class="maxtemperature">30°C</p>
+                        <p>Maximum temp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="weather-opinions">
+        <img class="chat" src="images/chat.png" alt="chat-png">
+        <h2>What do you think of the weather?</h2>
+        <form id="opinion-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+          <label for="opinion">Opinion:</label>
+          <textarea id="opinion" name="opinion"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <h3 class="comment">Recent Comments</h3>
+        <ul id="comments-list"></ul>
+      </div>
+      
+      
+      
+</body>
+</html>

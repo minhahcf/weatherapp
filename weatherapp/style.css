@@ -1,0 +1,186 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Reenie+Beanie&family=Staatliches&display=swap');
+/*COLORS:
+wh - f1faee
+lb - a8dadc
+mb - 457b9d
+sb - 1d3557
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #457b9d;
+}
+.info{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #a8dadc,#457b9d);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.searchbox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.searchbox input{
+    border: 0;
+    outline: 0;
+    background: #f1faee;
+    color: black;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.searchbox button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.searchbox button:hover, .searchbox input:active{
+    background-color: #a8dadc;
+}
+.searchbox img{
+    width: 16px;
+}
+.weather-png{
+    width: 170px;
+    margin-top: 30px;
+}
+.weatherinfo h1{
+    font-size: 80px;
+    font-weight: 500;
+    font-family: 'Staatliches', cursive;
+}
+.weatherinfo h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+    font-family: 'Staatliches', cursive;
+}
+.searchbox input{
+    font-family: 'Staatliches', cursive;
+    color: #454a46;
+}
+p{
+    font-family: 'Outfit', sans-serif;
+}
+.description, .description2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.column{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.column img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity, .wind, .mintemperature, .maxtemperature{
+    font-size: 28px;
+    margin-top: -6px;
+}
+.weatherinfo{
+    display: none;
+}
+.errortext{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+h3{
+    font-size: 20px;
+    font-family: 'Outfit', sans-serif;
+}
+.column:hover{
+    color:#454a46;
+}
+/*comment section*/ 
+.weather-opinions {
+    padding: 0px;
+    margin: 40px auto;
+    max-width: 400px;
+  }
+  .weather-opinions h2 {
+    margin-top: 0;
+    font-family: 'Staatliches', cursive;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .weather-opinions form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .weather-opinions form:active {
+    font-family: 'Outfit', sans-serif;
+  }
+  .weather-opinions label {
+    margin-bottom: 5px;
+    font-family: 'Outfit', sans-serif;
+    margin-top: 20px;
+    color: white;
+  }
+  #name{
+    width: 400px;
+    height: 30px;
+  }
+  .weather-opinions textarea {
+    height: 100px;
+    width: 400px;
+  }
+  .weather-opinions button {
+    margin-top: 10px;
+    width: 70px;
+    height: 30px;
+    font-family: 'Outfit', sans-serif;
+    background-color: #ebfffc;
+    border-radius: 25px;
+  }
+  #opinion-form input, #opinion-form textarea{
+    font-family: 'Outfit', sans-serif;
+  }
+  .weather-opinions button:hover {
+    background-color:#a8dadc;
+  }
+  .comment {
+    color: white;
+}
+#comments-list {
+    font-family: 'Outfit', sans-serif;
+    color: #ebfffc;
+}
+#comments-list li{
+    padding: 10px;
+}
+.chat{
+    width: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
